@@ -7,7 +7,7 @@ namespace EmployeeReact.Models
     {
         public int EmployeeId { get; set; }
         public string FirstName { get; set; }
-        public string LasttName { get; set; }
+        public string LastName { get; set; }
         public int? CityId { get; set; }
 
         public City City { get; set; }

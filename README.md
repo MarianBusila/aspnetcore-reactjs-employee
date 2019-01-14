@@ -23,7 +23,7 @@ CityName varchar(20) NOT NULL
 CREATE TABLE Employee (      
 EmployeeID int IDENTITY(1,1) NOT NULL PRIMARY KEY,      
 FirstName varchar(20) NOT NULL ,      
-LasttName varchar(20) NOT NULL ,      
+LastName varchar(20) NOT NULL ,      
 CityId int ,
 constraint FK_Employee_City_Id foreign key (CityId) references City(CityId)
 )

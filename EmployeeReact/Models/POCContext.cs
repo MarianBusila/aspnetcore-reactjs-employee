@@ -48,7 +48,7 @@ namespace EmployeeReact.Models
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
-                entity.Property(e => e.LasttName)
+                entity.Property(e => e.LastName)
                     .IsRequired()
                     .HasMaxLength(20)
                     .IsUnicode(false);
