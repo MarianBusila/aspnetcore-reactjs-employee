@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace EmployeeReact.Models
 {
@@ -9,5 +10,11 @@ namespace EmployeeReact.Models
         int Insert(Employee employee);
         void Update(Employee employee);
         void Delete(int id);
+
+        Task<Employee> GetAsync(int id);
+        Task<IEnumerable<Employee>> GetAllAsync();
+        Task<int> InsertAsync(Employee employee);
+        Task UpdateAsync(Employee employee);
+        Task DeleteAsync(int id);
     }
 }
